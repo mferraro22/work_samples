@@ -8,7 +8,7 @@ def checkMagazine(magazine, note):
 
 	"""
 	The goal was to see which words were used in the note
-	from the magazineto try to catch the criminal behind
+	from the magazine to try to catch the criminal behind
 	the ransom note, including keeping track of duplicate words.
 	"""
 
