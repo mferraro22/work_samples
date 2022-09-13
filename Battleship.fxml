@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="741.0" prefWidth="1290.0" style="-fx-background-color: #37B6E4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BattleshipController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="34.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <TextField fx:id="enterTextField" alignment="CENTER" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: black;" GridPane.columnIndex="13" GridPane.rowIndex="14">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextField>
+        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: black;" GridPane.columnIndex="12" GridPane.rowIndex="24" />
+        <ToggleButton fx:id="playerAircraft1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="7" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="playerAircraft2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="8" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="playerAircraft5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="11" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="playerAircraft4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="10" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="playerAircraft3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="9" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="playerCruiser4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="10" GridPane.rowIndex="17" />
+        <ToggleButton fx:id="playerCruiser3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="9" GridPane.rowIndex="17" />
+        <ToggleButton fx:id="playerCruiser2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="8" GridPane.rowIndex="17">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></ToggleButton>
+        <ToggleButton fx:id="playerCruiser1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="7" GridPane.rowIndex="17">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></ToggleButton>
+        <ToggleButton fx:id="playerDestroyer3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="5" GridPane.rowIndex="17">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></ToggleButton>
+        <ToggleButton fx:id="playerDestroyer1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="3" GridPane.rowIndex="17">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></ToggleButton>
+        <ToggleButton fx:id="playerBattleship3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="4" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="playerBattleship2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="3" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="playerBattleship1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="playerDestroyer2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="4" GridPane.rowIndex="17">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></ToggleButton>
+        <ToggleButton fx:id="playerPatrol2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="9" GridPane.rowIndex="15" />
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="F" textFill="WHITE" GridPane.columnIndex="7">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="E" textFill="WHITE" GridPane.columnIndex="6">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="D" textFill="WHITE" GridPane.columnIndex="5">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="C" textFill="WHITE" GridPane.columnIndex="4">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="B" textFill="WHITE" GridPane.columnIndex="3">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="A" textFill="WHITE" GridPane.columnIndex="2">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="J" textFill="WHITE" GridPane.columnIndex="11">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="I" textFill="WHITE" GridPane.columnIndex="10">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="H" textFill="WHITE" GridPane.columnIndex="9">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="G" textFill="WHITE" GridPane.columnIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="1">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="20" textFill="WHITE" GridPane.rowIndex="22">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="19" textFill="WHITE" GridPane.rowIndex="21">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="18" textFill="WHITE" GridPane.rowIndex="20">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="17" textFill="WHITE" GridPane.rowIndex="19">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="16" textFill="WHITE" GridPane.rowIndex="18">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="15" textFill="WHITE" GridPane.rowIndex="17">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="14" textFill="WHITE" GridPane.rowIndex="16">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="13" textFill="WHITE" GridPane.rowIndex="15">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="12" textFill="WHITE" GridPane.rowIndex="14">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="11" textFill="WHITE" GridPane.rowIndex="13">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="10" textFill="WHITE" GridPane.rowIndex="11">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="9" textFill="WHITE" GridPane.rowIndex="10">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="8" textFill="WHITE" GridPane.rowIndex="9">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="7" textFill="WHITE" GridPane.rowIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="6" textFill="WHITE" GridPane.rowIndex="7">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="5" textFill="WHITE" GridPane.rowIndex="6">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="4" textFill="WHITE" GridPane.rowIndex="5">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="3" textFill="WHITE" GridPane.rowIndex="4">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="2" textFill="WHITE" GridPane.rowIndex="3">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="1" textFill="WHITE" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="rLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="H" textFill="ORANGE" GridPane.columnIndex="9" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="83.0" prefWidth="92.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="eLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="S" textFill="ORANGE" GridPane.columnIndex="8" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="n2Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="E" textFill="ORANGE" GridPane.columnIndex="7" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="nLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="L" textFill="ORANGE" GridPane.columnIndex="6" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="aLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="A" textFill="ORANGE" GridPane.columnIndex="3" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="wLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="T" textFill="ORANGE" GridPane.columnIndex="4" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="bLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="B" textFill="ORANGE" GridPane.columnIndex="2" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="play" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="11">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="pLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="P" textFill="ORANGE" GridPane.columnIndex="11" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="i2Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="I" textFill="ORANGE" GridPane.columnIndex="10" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="21">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="20">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="20">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="20">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="19">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="18">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="17">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="16">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="15">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="15">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="10">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="9">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="3">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="8">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="7">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="4">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="iLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" text="T" textFill="ORANGE" GridPane.columnIndex="5" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="again" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="5">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="6">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="22">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="23">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.rowIndex="23">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="10.0" style="-fx-background-color: black;" textFill="WHITE" GridPane.columnIndex="12" GridPane.rowIndex="12">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fireTextField" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onEnter" promptText="Pick Position" GridPane.columnIndex="10" GridPane.rowIndex="24" />
+        <ToggleButton fx:id="playerPatrol1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: grey;" GridPane.columnIndex="8" GridPane.rowIndex="15">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </ToggleButton>
+        <TextField fx:id="pcFireTextField" alignment="CENTER" editable="false" style="-fx-background-color: teal;" GridPane.columnIndex="12">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextField>
+        <ToggleButton fx:id="destroyer1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="destroyer2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="destroyer3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="A4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="A5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="A6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="A7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="A8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="A9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="A10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="21.0" prefWidth="86.0" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="B1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="B2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="B3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="B4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="B5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="B6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="B7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="B8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="B9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="B10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="C1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="C2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="C3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="C4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="cruiser1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="cruiser2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="cruiser3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="cruiser4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="C9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="C10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="D1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="D2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="D3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="D4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="D5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="D6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="D7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="D8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="D9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="D10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="E1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="E2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="E3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="E4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="E5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="E6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="battleship1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="E8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="E9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="E10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="patrolBoat1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="F2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="F3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="F4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="F5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="F6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="battleship2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="F8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="F9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="F10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="patrolBoat2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="G2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="G3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="G4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="G5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="G6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="battleship3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="G8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="G9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="G10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="H1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="H2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="H3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="H4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="H5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="H6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="H7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="H8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="H9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="H10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="I1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="I2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="I3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="I4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="I5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="J1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+        <ToggleButton fx:id="J2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+        <ToggleButton fx:id="J3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="J4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+        <ToggleButton fx:id="J5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+        <ToggleButton fx:id="I6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="aircraft1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="7" />
+        <ToggleButton fx:id="I7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="aircraft2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+        <ToggleButton fx:id="I8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="aircraft3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="9" />
+        <ToggleButton fx:id="I9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="aircraft4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="10" />
+        <ToggleButton fx:id="I10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="aircraft5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="11" />
+        <ToggleButton fx:id="A11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="A12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="A13" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+        <ToggleButton fx:id="A14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="A15" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+        <ToggleButton fx:id="A16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="A17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="A19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="A20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="2" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="B11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="B12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="J11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="J12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="J13" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="15" />
+        <ToggleButton fx:id="J14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="J15" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="17" />
+        <!--      <ToggleButton fx:id="F16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="18" />-->
+        <!--      <ToggleButton fx:id="F17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="19" />-->
+        <!--      <ToggleButton fx:id="F20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="22" />-->
+        <!--      <ToggleButton fx:id="F19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="21" />-->
+        <ToggleButton fx:id="I20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="I19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="H20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="G20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="F20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="E20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="D20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="C20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="B20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="22" />
+        <ToggleButton fx:id="B19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="C19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="D19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="E19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="F19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="G19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="H19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="D18" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="E18" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="20" />
+        <ToggleButton fx:id="B17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="C11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="B13" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+        <ToggleButton fx:id="B14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="B16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="C12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="C13" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+        <ToggleButton fx:id="D11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="D12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="C14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="D13" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+        <ToggleButton fx:id="D14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="C16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="D16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="C17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="4" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="D17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="5" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="I17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="I16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="I11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="I12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="E11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="E17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="F17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="G17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="E16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="F16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="G16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="H17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="H16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="E15" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+        <ToggleButton fx:id="E14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="E13" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+        <ToggleButton fx:id="F11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="G11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="H11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="13" />
+        <ToggleButton fx:id="E12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="F12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="F13" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="15" />
+        <ToggleButton fx:id="G12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="H12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="14" />
+        <ToggleButton fx:id="I13" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="15" />
+        <ToggleButton fx:id="I14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="10" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="H14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="9" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="G14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="8" GridPane.rowIndex="16" />
+        <ToggleButton fx:id="F14" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="7" GridPane.rowIndex="16" />
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fireButtonPressed" style="-fx-background-color: red;" text="FIRE" GridPane.columnIndex="11" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="hmFireTextField" alignment="CENTER" editable="false" style="-fx-background-color: teal;" GridPane.columnIndex="12" GridPane.rowIndex="24">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="playAgainTextField" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: black;" GridPane.columnIndex="13" GridPane.rowIndex="13">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextField>
+        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#enterButtonPressed" opacity="0.0" style="-fx-background-color: black;" GridPane.columnIndex="13" GridPane.rowIndex="14">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <ToggleButton fx:id="J16" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="18" />
+        <ToggleButton fx:id="J17" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="19" />
+        <ToggleButton fx:id="J19" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="21" />
+        <ToggleButton fx:id="J20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #37B6E4;" GridPane.columnIndex="11" GridPane.rowIndex="22" />
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</GridPane>
+
