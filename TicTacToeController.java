@@ -3,11 +3,11 @@ import java.util.Random;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Board {
+public class TicTacToeController {
 
     private Position[][] board;
 
-    public Board() {
+    public TicTacToeController() {
     }
 
     public TicTacToeController(Position[][] board) {
