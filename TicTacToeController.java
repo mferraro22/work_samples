@@ -10,7 +10,7 @@ public class Board {
     public Board() {
     }
 
-    public Board(Position[][] board) {
+    public TicTacToeController(Position[][] board) {
         this.board = board;
     }
 
